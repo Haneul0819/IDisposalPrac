@@ -11,8 +11,10 @@ namespace IDisposalPrac
     {
         static void Main(string[] args)
         {
-            File.WriteAllText(@"c:\test\test.txt",
+            File.WriteAllText(@"c:\temp\test.txt",
                 "문자열을 파일에 씁니다.");
+            Console.WriteLine(
+                File.ReadAllText(@"c:\temp\test.txt"));
         }
     }
 }
